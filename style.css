@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.btn-container {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.btn {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+.blue {
+    background-color: blue;
+}
+.purple {
+    background-color: purple;
+}
+
+/* Flash Effects */
+.flash {
+    background-color: white !important;
+    color: black !important;
+}
+
+.userFlash {
+    background-color: green !important;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 500px) {
+    .btn-container {
+        height: 260px;
+        width: 260px;
+        gap: 15px;
+    }
+
+    .btn {
+        height: 90px;
+        width: 90px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .btn-container {
+        height: 220px;
+        width: 220px;
+        gap: 10px;
+    }
+
+    .btn {
+        height: 80px;
+        width: 80px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+}
